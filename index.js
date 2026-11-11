@@ -15,6 +15,9 @@ app.post('/', (req, res) => {
     res.send('Got a POST request');
     console.log(req.body);
 });
-
+app.get('/', (req, res) => {
+    res.send('Got a get request');
+    console.log(req.body);
+});
 // Export the app for Vercel's serverless environment
 module.exports = app;
