@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
     // See the section on static files below for the recommended change
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/', (req, res) => {
